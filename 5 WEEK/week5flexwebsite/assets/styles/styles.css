@@ -1,0 +1,96 @@
+.page{
+    width: 1024px;
+    padding: 0;
+    margin: 0;
+}
+
+.realheader, .realfooter{
+    flex: 0 0 content;
+    background: #D3D3D3;
+}
+
+.realheader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+height: 80px;
+}
+
+.realfooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+}
+
+.footersection{
+    display: flex;
+    background: #FFFFFF;
+    width: 22%;
+    height: 67%;
+    align-items: center;
+    justify-content: center;
+}
+
+#allitems{
+    display: flex;
+    flex-direction: row;
+    height: 30vh;
+}
+
+#realmain{
+    background: #FFF8DC;
+    width: 65%;
+}
+
+#mainpart {
+    display: flex;
+    justify-content: center;
+    height: 30%;
+    padding-top: 2%;
+}
+
+
+.containercontent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 70%;
+}
+
+.maindiv1, .maindiv2, .maindiv3{
+    display: flex;
+    background:#FFDEAD;
+    width: 46%;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.maindiv3{
+    width: 96%;
+    margin-top: -8%;
+}
+
+.realaside{
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    padding-top: 2.6%;
+    background: rgba(107,142,35, 0.2);
+}
+
+/*Fonts*/
+.realheader, .realfooter{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#allitems {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-weight: bold;
+}
