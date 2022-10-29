@@ -1,0 +1,569 @@
+
+/*Main structure*/
+
+.body{
+    width: 1440px;
+    height: 3913px;
+    margin: 0;
+    padding: 0;
+}
+.body{
+    display: grid;
+grid-template-areas: "header"
+"main"
+"footer";
+grid-template-columns: 1400px;
+grid-template-rows: 116px 3386px 410px;
+}
+
+.header{
+    grid-area: header;
+}
+.main{
+    grid-area: main;
+}
+.footer{
+    grid-area: footer;
+}
+
+.main{
+    display: grid;
+    grid-template-areas: "general"
+    "giftcontent"
+    "signup"
+    "blog";
+    grid-template-columns:1440px;
+    grid-template-rows: 1300px 820px 240px 1026px;
+}
+
+.general{
+    grid-area: general;
+}
+.giftcontent{
+    grid-area: giftcontent;
+}
+.signup{
+    grid-area: signup;
+}
+.blog{
+    grid-area: blog;
+}
+
+/*Elements positioning*/
+
+/*Header*/
+
+.header{
+    display: grid;
+    width: 1440px;
+    grid-template-columns: 36.5% 50% 1fr;
+    grid-template-rows: 116px;
+    background: #FAFAFA;
+    align-items: center;
+}
+.logo{
+    grid-column: 1/2;
+    padding: 80px;
+}
+
+.mainmenu{
+    grid-column: 2/3;
+}
+
+.menulist{
+    display: grid;
+    width: 236px;
+    grid-template-columns: 49px 75px 68px 46px;
+    grid-template-rows: 1fr;
+    gap: 8%;
+}
+
+.giftfinder{
+    grid-column: 3/4;
+    width: 150px;
+    height: 43.5px;
+}
+
+.buttongift{
+    padding-left: 10%;
+}
+
+.general{
+    background: #F1F1F2;
+    display: grid;
+    width: 1440px;
+    height: 1300px;
+    grid-template-areas: "generalcontent1 generalphoto1"
+    "generalphoto2 generalcontent2";
+grid-template-columns: 50% 50%;
+grid-template-rows: 54% 46%;
+}
+.generalcontent1{
+    grid-area: generalcontent1;
+}
+.generalphoto1{
+    grid-area: generalphoto1;
+}
+.generalcontent2{
+    grid-area: generalcontent2;
+}
+.generalphoto2{
+    grid-area: generalphoto2;
+}
+
+.generalcontent1{
+    padding: 15% 20% 15% 20%;
+}
+
+.generalcontent2{
+    padding: 14% 23% 15% 15%;
+}
+
+/*Gift content sections*/
+
+.giftcontent{
+    background: #FFFFFF;
+    display: grid;
+width: 1440px;
+height: 820px;
+grid-template-areas: "giftcontentname"
+"giftsections";
+grid-template-columns: 1440px;
+grid-template-rows: 25% 75%;
+}
+.giftcontentname{
+    grid-area: giftcontentname;
+}
+.giftsections{
+    grid-area: giftsections;
+}
+
+.giftcontentname{
+text-align: center;
+padding: 4% 0 0 0;
+}
+
+.giftsections{
+    display: grid;
+    width: 1440px;
+    height: 573px;
+    grid-template-areas: "giftsection1 giftsection2 giftsection3 giftsection4";
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 573px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.giftsection1, .giftsection2, .giftsection3, .giftsection4{
+    background: #FAFAFA;
+    height: 436px;
+    width: 270px;
+    display: grid;
+    grid-template-areas: "giftpicture"
+    "giftallp"
+    "giftalllinks";
+    grid-template-columns: 270px;
+    grid-template-rows: 63% 1fr 1fr;
+}
+.giftpicture{
+    grid-area: giftpicture;
+}
+.giftallp{
+    grid-area: giftallp;
+}
+.giftalllinks{
+    grid-area: giftalllinks;
+}
+
+#bday,#anniversary, #valentinesday, #christmas{
+width: 100%;
+height: 100%;
+}
+.giftallp{
+    padding-left: 8%;
+}
+.giftalllinks{
+    padding-left: 8%;
+    padding-top: 14%;
+}
+
+/*Sign up section*/
+
+.signup{
+    background: #F7941E;
+    display: grid;
+    width: 1440px;
+    height: 240px;
+    grid-template-areas: "signuptext signupbuttons";
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 240px;
+    justify-items: center;
+    align-items: center;
+}
+.signuptext{
+    grid-area: signuptext;
+}
+.signupbuttons{
+    grid-area: signupbuttons;
+    display: grid;
+    grid-template-areas: "signupbutton1 signupbutton2";
+    grid-template-columns: 50% 50%;
+    gap: 6px;
+}
+.signupbutton1{
+    grid-area: signupbutton1;
+}
+.signupbutton2{
+    grid-area: signupbutton2;
+}
+
+
+/*Blog section*/
+.blog{
+    background: #FFFFFF;
+    display: grid;
+    width: 1440px;
+    height: 1026px;
+    grid-template-areas: "blogsection1"
+    "blogsection2"
+    "blogsection3";
+    grid-template-columns: 1440px;
+    grid-template-rows: 246px 370px 1fr;
+    justify-items: center;
+}
+.blogsection1{
+    grid-area: blogsection1;
+}
+.blogsection2{
+    grid-area: blogsection2;
+}
+.blogsection3{
+    grid-area: blogsection3;
+}
+
+.blogsection1{
+    text-align: center;
+    padding-top: 2.5%;
+}
+.blogh{
+margin-bottom: 27px;
+}
+
+.blogsection2{
+    background:#231F20;
+    display: grid;
+    width: 1170px;
+    height: 370px;
+    grid-template-areas: "wedding blogsection2text";
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 370px;
+}
+.wedding{
+    grid-area: wedding;
+}
+.blogsection2text{
+    grid-area: blogsection2text;
+}
+
+.wedding{
+    width: 100%;
+    height: 100%;
+}
+.blogsection2text{
+    padding: 6% 20% 0 10%;
+}
+.blogstatement{
+    padding-bottom: 5%;
+    margin-top: 30px;
+}
+
+.blogsection3{
+display: grid;
+width: 1170px;
+height: 410px;
+grid-template-areas: "article1 article2";
+grid-template-columns: 50% 50%;
+grid-template-rows: 410px;
+align-items: center;
+justify-items: center;
+
+}
+
+.article1{
+    grid-area: article1;
+    width: 570px;
+    height: 290px;
+}
+.article2{
+    grid-area: article2;
+    width: 570px;
+    height: 290px;
+}
+
+.articlenames, .articlealltexts, .articlealllinks{
+    padding: 0 10% 3% 8%;
+}
+.articlenames{
+    margin-bottom: 15px;
+}
+
+/*Footer positioning*/
+.footer{
+    background: #FAFAFA;
+    display: grid;
+    width: 1440px;
+    height: 410px;
+    grid-template-areas: "footernavigation"
+    "contacts"
+    "privacy";
+    grid-template-columns: 1440px;
+    grid-template-rows: 188px 1.5fr 1fr ;
+    justify-items: center;
+    align-items: center;
+}
+.footernavigation{
+    grid-area: footernavigation;
+}
+.contacts{
+    grid-area: contacts;
+}
+.contacts{
+    display: grid;
+    width: 350px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.privacy{
+    grid-area: privacy;
+}
+
+.footernavigation{
+    display: grid;
+    width: 850px;
+    height: 150px;
+    grid-template-areas: "footernav1 logofooter footernav2";
+    grid-template-columns: 35% 30% 35%;
+    grid-template-rows: 188px;
+    align-items: center;
+}
+.footernav1{
+    grid-area: footernav1;
+}
+.logofooter{
+    grid-area: logofooter;
+}
+.footernav2{
+    grid-area: footernav2;
+}
+
+.navpart1{
+    display: grid;
+    width: 100%;
+    grid-template-rows: 1fr;
+    grid-template-columns:1fr 1fr;
+    gap: 3%
+}
+
+.navpart2{
+    display: grid;
+    width: 100%;
+    grid-template-rows: 1fr;
+    grid-template-columns:1fr 1fr;
+    gap: 3%
+}
+.logofooterpicture{
+    padding-left: 43%;
+}
+
+
+/*Fonts and styles*/
+
+*{
+    font-family: "Gilroy";
+}
+/*Header*/
+.menulist{
+    font-size: 18px;
+    font-weight: 400;
+}
+.menulist li a{
+    color: #000000;
+}
+
+.giftfinder{
+    background: #FAFAFA;
+    border: 1px solid #F7941E;
+border-radius: 5px;
+color: #F7941E;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+/*Main General*/
+.generalphoto1{
+background: url(/assets/images/generalphoto1.png);
+width: 100%;
+height: 100%;}
+
+.generalphoto2{
+    background: url(/assets/images/generalphoto2.png);
+    height:100%;
+    width: 100%;
+}
+
+#hgeneralcontent1{
+    font-size: 56px;
+    font-weight: 600;
+}
+#pgeneralcontent1{
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 15%;
+}
+.findgiftnow, .learnmore{
+    font-size: 18px;
+}
+#pgeneralcontent2{
+    font-size: 20px;
+    line-height: 28px;
+    text-align: justify;
+    margin-bottom: 15%;
+}
+#hgeneralcontent2{
+    font-size: 32px;
+}
+#pgeneralcontent1, .findgiftnow, #pgeneralcontent2, #hgeneralcontent2, .learnmore{
+    font-weight: 400;
+}
+.findgiftnow{
+    background: #F7941E;
+    color: #FFFFFF;
+}
+.learnmore{
+    background: #F1F1F2;
+    color: #F7941E;
+}
+.findgiftnow, .learnmore{
+    width: 200px;
+    height: 60px; 
+    border: 1px solid #F7941E;
+    border-radius: 5px;
+}
+
+/*Gift content sections*/
+.giftcontent{
+    font-weight: 400;
+}
+.hgiftcontent{
+    font-size: 32px;
+}
+.pgiftcontent{
+    font-size: 18px;
+    margin-top: -1.3%;
+}
+#pgiftsection1, #pgiftsection2, #pgiftsection3, #pgiftsection4{
+    font-size: 20px;
+}
+#linkseemore1, #linkseemore2, #linkseemore3, #linkseemore4{
+    font-size: 14px;
+    color: #000000;
+}
+
+/*Sign up section*/
+.signuptext{
+    font-size: 32px;
+}
+#signup1p{
+    font-weight: 700;
+    margin-bottom: -6%;
+}
+#signup2p{
+    font-weight: 400;
+}
+
+.signupbutton1{
+background: #231F20;
+border-radius: 5px;
+margin-right: 10px;
+color: #FFFFFF;
+}
+
+.signupbutton1, .signupbutton2{
+    width: 200px;
+    height: 50px;
+}
+.signupbutton2{
+background: #F7941E;
+border: 1px solid #000000;
+border-radius: 5px;
+color: #000000;
+}
+.signupbutton2, .signupbutton1{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/*Blog style*/
+
+.blogsection1, .blogsection2text, #articletext1, #articletext2, #linkreadmore2, #linkreadmore3{
+    font-weight: 400;
+}
+#articlename1, #articlename2{
+    font-weight: 700;
+}
+.articlealllinks{
+    color: #000000;
+}
+.linkreadmore1{
+    color: #FFFFFF;
+}
+.blogp, .linkreadmore1, .articlealltexts{
+    font-size: 18px;
+}
+.blogh{
+    font-size: 32px;
+    font-weight: 400;
+}
+.name, .articlealllinks{
+    font-size: 14px;
+}
+.blogstatement{
+    font-size: 48px;
+}
+.articlenames{
+    font-size: 24px;
+}
+.blogsection2text{
+    color: #FFFFFF;
+}
+
+.article1, .article2{
+    background: #FFFFFF;
+box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+.articlealltexts{
+    line-height: 25px;
+}
+
+/*Footer style*/
+.navpart1, .navpart2{
+    font-size: 14px;
+    font-weight: 700;
+}
+.privacy{
+    font-size: 14px;
+    font-weight: 400;
+}
+.footernavigation{
+    border-bottom: 1px solid #000000;
+}
+
+.linkfacebook, .linktwitter, .linkinstagram, .linkyoutube, .linkpinterest{
+    color: #000000;
+}

@@ -1,0 +1,133 @@
+.page{
+    width: 1024px;
+    padding: 0;
+    margin: 0;
+}
+
+/*Основной скелет*/
+.container{
+display: grid;
+width: 100%;
+height: 50vh;
+grid-template-areas: "realheader realheader"
+                    "realmain realaside"
+                    "realfooter realfooter";
+grid-template-columns: 65% 1fr;
+grid-template-rows: 14% 1fr 26%;
+}
+
+.realheader{
+    grid-area: realheader;
+    background: #D3D3D3;
+}
+
+#realmain{
+    grid-area: realmain;
+    background: #FFF8DC;
+}
+
+.realaside{
+    grid-area: realaside;
+    background: rgba(107,142,35, 0.2)
+}
+
+.realfooter{
+    grid-area: realfooter;
+    background: #D3D3D3;
+}
+
+.maindiv1, .maindiv2, .maindiv3{
+    background: #FFDEAD;
+}
+
+.footersection{
+    background: #FFFFFF;
+}
+
+/*Внутри основного скелета*/
+
+.realheader{
+    display: grid;
+    grid-template: 1fr / 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.realaside{
+    display: grid;
+    justify-items: center;
+}
+.asidecontent{
+    padding-top: 10%;
+
+}
+#realmain{
+    display: grid;
+    grid-template-rows: 40% 1fr;
+    grid-template-columns: 1fr;
+}
+
+.containercontent{
+    display: grid;
+    width: 100%;
+    height: 98%;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 40% 40%;
+    row-gap: 10%;
+    column-gap: 3%;
+    padding-left: 3%;
+}
+
+.maindiv1, .maindiv2, .maindiv3{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.maindiv1{
+    grid-row: 1;
+    grid-column: 1;
+}
+.maindiv2{
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.maindiv3{
+    grid-row: 2;
+    grid-column: span 2;
+}
+
+#mainpart{
+    justify-self: center;
+padding-top: 2%;
+}
+
+.realfooter{
+    display: grid;
+    grid-template-columns: repeat(4, 22%);
+    align-items: center;
+    padding-left: 3%;
+    gap: 2.6%;
+}
+
+.footersection{
+    display: grid;
+    height: 68%;
+    align-items: center;
+    justify-items: center;
+}
+
+/*Fonts*/
+
+.realheader, .realfooter{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#realmain, .realaside {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-weight: bold;
+}
