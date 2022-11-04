@@ -1,0 +1,583 @@
+@media screen and (min-width:1024px){
+    
+
+/*Main structure*/
+    
+
+.body{
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+.body{
+    display: grid;
+grid-template-areas: "header"
+"main"
+"footer";
+grid-template-columns: 100%;
+grid-template-rows: 3% 1fr 9%;
+}
+
+.header{
+    grid-area: header;
+}
+.main{
+    grid-area: main;
+}
+.footer{
+    grid-area: footer;
+}
+
+.main{
+    display: grid;
+    grid-template-areas: "general"
+    "giftContent"
+    "signUp"
+    "blog";
+    grid-template-columns:100vw;
+    grid-template-rows: 37% 25% 6.5% 1fr;
+}
+.general{
+    grid-area: general;
+}
+.giftContent{
+    grid-area: giftContent;
+}
+.signUp{
+    grid-area: signUp;
+}
+.blog{
+    grid-area: blog;
+}
+
+
+
+/*Elements positioning*/
+
+/*Header*/
+    
+.header{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 35% 1fr 37%;
+    grid-template-rows: 100%;
+    background: #FAFAFA;
+    align-items: center;
+}
+.logo{
+    grid-column: 1/2;
+    padding: 17%;
+}
+
+.mainMenu{
+    grid-column: 2/3;
+}
+
+.menuList{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1.3fr 1.2fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 2%;
+}
+
+.giftFinder{
+    grid-column: 3/4;
+    width: 9.5vw;
+    height: 3.2vh;
+}
+
+.buttonGift{
+    padding-left: 65%;
+}
+.general{
+    background: #F1F1F2;
+    display: grid;
+    width: 100vw;
+    grid-template-areas: "generalContent1 generalPhoto1"
+    "generalPhoto2 generalContent2";
+grid-template-columns: 50% 1fr;
+grid-template-rows: 51% 1fr;
+}
+.generalContent1{
+    grid-area: generalContent1;
+}
+.generalPhoto1{
+    grid-area: generalPhoto1;
+}
+.generalContent2{
+    grid-area: generalContent2;
+}
+.generalPhoto2{
+    grid-area: generalPhoto2;
+}
+
+.generalContent1{
+    padding: 10% 20% 15% 20%;
+}
+
+.generalContent2{
+    padding: 5% 20% 15% 15%;
+}
+
+/*Gift content sections*/
+
+.giftContent{
+    background: #FFFFFF;
+    display: grid;
+    width: 100vw;
+grid-template-areas: "giftContentName"
+"giftSections";
+grid-template-columns: 100%;
+grid-template-rows: 30% 69%;
+}
+.giftContentName{
+    grid-area: giftContentName;
+}
+.giftSections{
+    grid-area: giftSections;
+}
+
+.giftContentName{
+text-align: center;
+padding: 4% 0 0 0;
+}
+
+.giftSections{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-areas: "giftSection1 giftSection2 giftSection3 giftSection4";
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 1fr;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.giftSection1, .giftSection2, .giftSection3, .giftSection4{
+    background: #FAFAFA;
+    height: 40vh;
+    width: 22vw;
+    display: grid;
+    grid-template-areas: "giftPicture"
+    "giftAllp"
+    "giftAllLinks";
+    grid-template-columns: 1fr;
+    grid-template-rows: 63% 1fr 1fr;
+}
+.giftPicture{
+    grid-area: giftPicture;
+}
+.giftAllp{
+    grid-area: giftAllp;
+}
+.giftAllLinks{
+    grid-area: giftAllLinks;
+}
+
+#bday,#anniversary, #valentinesday, #christmas{
+max-width: 100%;
+height: 100%;
+}
+.giftAllp{
+    padding-left: 8%;
+}
+.giftAllLinks{
+    padding-left: 8%;
+    padding-top: 14%;
+}
+
+/*Sign up section*/
+
+.signUp{
+    background: #F7941E;
+    display: grid;
+    width: 100vw;
+    grid-template-areas: "signUpText signUpButtons";
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+    justify-items: center;
+    align-items: center;
+}
+.signUpText{
+    grid-area: signUpText;
+}
+.signUpButtons{
+    grid-area: signUpButtons;
+    display: grid;
+    grid-template-areas: "signUpButton1 signUpButton2";
+    grid-template-columns: 50% 50%;
+    gap: 2%;
+}
+.signUpButton1{
+    grid-area: signUpButton1;
+}
+.signUpButton2{
+    grid-area: signUpButton2;
+}
+
+
+/*Blog section*/
+.blog{
+    background: #FFFFFF;
+    display: grid;
+    width: 100vw;
+    height: 100%;
+    grid-template-areas: "blogSection1"
+    "blogSection2"
+    "blogSection3";
+    grid-template-columns: 100%;
+    grid-template-rows: 24% 38% 37%;
+    justify-items: center;
+}
+.blogSection1{
+    grid-area: blogSection1;
+}
+.blogSection2{
+    grid-area: blogSection2;
+}
+.blogSection3{
+    grid-area: blogSection3;
+}
+
+.blogSection1{
+    text-align: center;
+    padding-top: 2.5%;
+}
+.blogh{
+margin-bottom: 3%;
+}
+
+.blogSection2{
+    background:#231F20;
+    display: grid;
+    height: 95%;
+    width: 80vw;
+    grid-template-areas: "wedding blogSection2text";
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 100%;
+}
+.wedding{
+    grid-area: wedding;
+}
+.blogSection2text{
+    grid-area: blogSection2text;
+}
+
+.wedding{
+    max-width: 100%;
+    height: 100%;
+}
+.blogSection2text{
+    padding: 6% 20% 0 10%;
+}
+.blogStatement{
+    padding-bottom: 5%;
+    margin-top: 6%;
+}
+
+.blogSection3{
+display: grid;
+width: 90vh;
+width: 80vw;
+grid-template-areas: "article1 article2";
+grid-template-columns: 50% 50%;
+grid-template-rows: 100%;
+align-items: center;
+justify-items: center;
+
+}
+
+.article1{
+    grid-area: article1;
+    width: 97%;
+    height: 85%;
+}
+.article2{
+    grid-area: article2;
+    width: 97%;
+    height: 85%;
+}
+
+.articleNames, .articleAllTexts, .articleAllLinks{
+    padding: 0 10% 3% 8%;
+}
+.articleNames{
+    margin-bottom: 10px;
+}
+
+/*Footer positioning*/
+.footer{
+    background: #FAFAFA;
+    display: grid;
+    width: 100vw;
+    height: 100%;
+    grid-template-areas: "footerNavigation"
+    "contacts"
+    "privacy";
+    grid-template-columns: 100%;
+    grid-template-rows: 2fr 0.5fr 0.5fr;
+    justify-items: center;
+    align-items: center;
+}
+.footerNavigation{
+    grid-area: footerNavigation;
+}
+.contacts{
+    grid-area: contacts;
+}
+.socialNetworks{
+    display: grid;
+    width: 20vw;
+    grid-template-areas: "socialNetworks";
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.socialNetworks{
+    grid-area: socialNetworks;
+}
+.privacy{
+    grid-area: privacy;
+}
+
+.footerNavigation{
+    display: grid;
+    width: 55vw;
+    grid-template-areas: "footerNav1 logoFooter footerNav2";
+    grid-template-columns: 35% 30% 35%;
+    grid-template-rows: 40%;
+    align-items: center;
+}
+.footerNav1{
+    grid-area: footerNav1;
+}
+.logoFooter{
+    grid-area: logoFooter;
+}
+.footerNav2{
+    grid-area: footerNav2;
+}
+
+.navPart1{
+    display: grid;
+    width: 100%;
+    grid-template-rows: 1fr;
+    grid-template-columns:1fr 1fr;
+    gap: 3%
+}
+
+.navPart2{
+    display: grid;
+    width: 100%;
+    grid-template-rows: 1fr;
+    grid-template-columns:1fr 1fr;
+    gap: 3%
+}
+.logoFooterPicture{
+    padding-left: 43%;
+}
+
+
+/*Fonts and styles*/
+
+*{
+    font-family: "Gilroy";
+}
+/*Header*/
+.menuList{
+    font-size: 0.8em;
+    font-weight: 400;
+}
+.menuList li a{
+    color: #000000;
+}
+
+.giftFinder{
+    background: #FAFAFA;
+    border: 1px solid #F7941E;
+border-radius: 0.3em;
+color: #F7941E;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+/*Main General*/
+.generalPhoto1{
+background: url(/assets/images/generalphoto1.png);
+background-repeat: no-repeat;
+background-size: cover;
+max-width: 100%;
+height: 100%;}
+
+.generalPhoto2{
+    background: url(/assets/images/generalphoto2.png);
+    height:100%;
+    max-width: 100%;
+    background-repeat: no-repeat;
+background-size: cover;
+}
+
+#hGeneralContent1{
+    font-size: 2.5em;
+    font-weight: 600;
+}
+#pGeneralContent1{
+    font-size: 1.2em;
+    line-height: 1.75rem;
+    margin-bottom: 15%;
+}
+.findGiftNow, .learnMore{
+    font-size: 1.5vh;
+}
+#pGeneralContent2{
+    font-size: 1.1em;
+    line-height: 1.75rem;
+    text-align: justify;
+    margin-bottom: 8%;
+}
+#hGeneralContent2{
+    font-size: 1.6em;
+}
+#pGeneralContent1, .findGiftNow, #pGeneralContent2, #hGeneralContent2, .learnMore{
+    font-weight: 400;
+}
+.findGiftNow{
+    background: #F7941E;
+    color: #FFFFFF;
+}
+.learnMore{
+    background: #F1F1F2;
+    color: #F7941E;
+}
+.findGiftNow, .learnMore{
+    width:20vw;
+    height: 6vh; 
+    border: 1px solid #F7941E;
+    border-radius: 0.3em;
+}
+
+/*Gift content sections*/
+.giftContent{
+    font-weight: 400;
+}
+.hGiftContent{
+    font-size: 2em;
+}
+.pGiftContent{
+    font-size: 1.2em;
+    margin-top: -1.5%;
+}
+#pGiftSection1, #pGiftSection2, #pGiftSection3, #pGiftSection4{
+    font-size: 1.2em;
+}
+#linkSeeMore1, #linkSeeMore2, #linkSeeMore3, #linkSeeMore4{
+    font-size: 0.88em;
+    color: #000000;
+}
+
+/*Sign up section*/
+.signUpText{
+    font-size: 2em;
+}
+#signUp1p{
+    font-weight: 700;
+    margin-bottom: -6%;
+}
+#signUp2p{
+    font-weight: 400;
+}
+
+.signUpButton1{
+background: #231F20;
+border-radius: 0.3em;
+margin-right: 5%;
+color: #FFFFFF;
+}
+
+.signUpButton1, .signUpButton2{
+    width: 20vw;
+    height: 5vh;
+}
+.signUpButton2{
+background: #F7941E;
+border: 1px solid #000000;
+border-radius: 0.3em;
+color: #000000;
+}
+.signUpButton2, .signUpButton1{
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+/*Blog style*/
+
+.blogSection1, .blogSection2text, #articleText1, #articleText2, #linkReadMore2, #linkReadMore3{
+    font-weight: 400;
+}
+#articleName1, #articleName2{
+    font-weight: 700;
+}
+.articleAllLinks{
+    color: #000000;
+}
+.linkReadMore1{
+    color: #FFFFFF;
+}
+.blogp, .linkReadMore1, .articleAllTexts{
+    font-size: 0.9em;
+}
+.blogh{
+    font-size: 2em;
+    font-weight: 400;
+}
+.name, .articleAllLinks{
+    font-size: 0.8em;
+}
+.blogStatement{
+    font-size: 2.2em;
+}
+.articleNames{
+    font-size: 1em;
+}
+.blogSection2text{
+    color: #FFFFFF;
+}
+
+.article1, .article2{
+    background: #FFFFFF;
+box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+.articleAllTexts{
+    line-height: 1.5em;
+}
+#linkReadMore2, #linkReadMore3 {
+    font-size: 0.7em;
+}
+
+/*Footer style*/
+.navPart1, .navPart2{
+    font-size: 0.8em;
+    font-weight: 700;
+}
+.privacy{
+    font-size: 0.8em;
+    font-weight: 400;
+}
+.footerNavigation{
+    border-bottom: 1px solid #000000;
+}
+
+.linkFacebook, .linkTwitter, .linkInstagram, .linkYoutube, .linkPinterest{
+    color: #000000;
+}
+
+.navPart1 a, .navPart2 a{
+    color: #000000;
+}
+}

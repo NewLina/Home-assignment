@@ -1,0 +1,460 @@
+@media screen and (min-width:300px) and (max-width:767px) {
+    
+    /*Main structure*/
+        
+    
+    .body{
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+    .body{
+        display: grid;
+    grid-template-areas: "header"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 3% 1fr 4%;
+    }
+    
+    .header{
+        grid-area: header;
+    }
+    .main{
+        grid-area: main;
+    }
+    .footer{
+        grid-area: footer;
+    }
+    
+    .main{
+        display: grid;
+        grid-template-areas: "general"
+        "giftContent"
+        "blog";
+        grid-template-columns:100vw;
+        grid-template-rows: 40% 38% 1fr;
+    }
+    .general{
+        grid-area: general;
+    }
+    .giftContent{
+        grid-area: giftContent;
+    }
+    .blog{
+        grid-area: blog;
+    }
+    
+    
+    
+    /*Elements positioning*/
+    
+    /*Header*/
+        
+    .header{
+        display: grid;
+        width: 100vw;
+        grid-template-columns: 16% 80%;
+        grid-template-rows: 100%;
+        background: #FAFAFA;
+        align-items: center;
+    }
+    .logo{
+        grid-column: 1/2;
+        padding: 30%;
+    }
+    
+    .mainMenu{
+        grid-column: 2/3;
+    }
+    
+    .menuList{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1.1fr 1.1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 1%;
+    }
+    
+    .general{
+        background: #F1F1F2;
+        display: grid;
+        width: 100vw;
+        grid-template-areas: "generalContent1" 
+        "generalPhoto1"
+        "generalPhoto2" 
+        "generalContent2";
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, 1fr);
+    }
+    .generalContent1{
+        grid-area: generalContent1;
+    }
+    .generalPhoto1{
+        grid-area: generalPhoto1;
+    }
+    .generalContent2{
+        grid-area: generalContent2;
+    }
+    .generalPhoto2{
+        grid-area: generalPhoto2;
+    }
+    
+    .generalContent1{
+        padding: 8% 20% 15% 20%;
+    }
+    
+    .generalContent2{
+        padding: 3% 20% 15% 15%;
+    }
+    
+    /*Gift content sections*/
+    
+    .giftContent{
+        background: #FFFFFF;
+        display: grid;
+        width: 100vw;
+    grid-template-areas: "giftContentName"
+    "giftSections";
+    grid-template-columns: 100%;
+    grid-template-rows: 11% 88%;
+    }
+    .giftContentName{
+        grid-area: giftContentName;
+    }
+    .giftSections{
+        grid-area: giftSections;
+    }
+    
+    .giftContentName{
+    text-align: center;
+    }
+    
+    .giftSections{
+        display: grid;
+        height: 100%;
+        width: 100%;
+        grid-template-areas: "giftSection1" 
+        "giftSection2"
+        "giftSection3" 
+        "giftSection4";
+        grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
+        grid-template-rows: 1fr;
+        justify-items: center;
+        align-items: center;
+        gap: 1.5%;
+    }
+    
+    .giftSection1, .giftSection2, .giftSection3, .giftSection4{
+        background: #FAFAFA;
+        height: 35vh;
+        width: 57vw;
+        display: grid;
+        grid-template-areas: "giftPicture"
+        "giftAllp"
+        "giftAllLinks";
+        grid-template-columns: 1fr;
+        grid-template-rows: 70% 1fr 1fr;
+    }
+    .giftPicture{
+        grid-area: giftPicture;
+    }
+    .giftAllp{
+        grid-area: giftAllp;
+    }
+    .giftAllLinks{
+        grid-area: giftAllLinks;
+    }
+    
+    #bday,#anniversary, #valentinesday, #christmas{
+    width: 100%;
+    height: 100%;
+    }
+    .giftAllp{
+        padding-left: 8%;
+    }
+    .giftAllLinks{
+        padding-left: 8%;
+        padding-top: 0.5%;
+    }
+
+    
+    /*Blog section*/
+    .blog{
+        background: #FFFFFF;
+        display: grid;
+        width: 100vw;
+        height: 100%;
+        grid-template-areas: "blogSection1"
+        "blogSection2"
+        "blogSection3";
+        grid-template-columns: 100%;
+        grid-template-rows: 18% 25% 1fr;
+        justify-items: center;
+    }
+    .blogSection1{
+        grid-area: blogSection1;
+    }
+    .blogSection2{
+        grid-area: blogSection2;
+    }
+    .blogSection3{
+        grid-area: blogSection3;
+    }
+    
+    .blogSection1{
+        text-align: center;
+        padding-top: 10%;
+    }
+    .blogh{
+    margin-bottom: 3%;
+    margin-top: 3%;
+    }
+    
+    .blogSection2{
+        background:#231F20;
+        display: grid;
+        width: 98vw;
+        grid-template-areas: "wedding blogSection2text";
+        grid-template-columns: 50% 49%;
+        grid-template-rows: 100%;
+    }
+    .wedding{
+        grid-area: wedding;
+    }
+    .blogSection2text{
+        grid-area: blogSection2text;
+    }
+    
+    .wedding{
+        max-width: 100%;
+        height: 100%;
+    }
+    .blogSection2text{
+        padding: 6% 20% 10% 10%;
+    }
+    .blogStatement{
+        margin-top: 6%;
+    }
+    
+    .blogSection3{
+    display: grid;
+    width: 95vw;
+    grid-template-areas: "article1"
+    "article2";
+    grid-template-columns: 100%;
+    grid-template-rows: 42% 42%;
+    align-items: center;
+    justify-items: center;
+    gap: 2%;
+    }
+    
+    .article1{
+        grid-area: article1;
+        width: 98%;
+        height: 100%;
+        margin-top: 5%;
+    }
+    .article2{
+        grid-area: article2;
+        width: 98%;
+        height: 100%;
+        margin-top: 5%;
+    }
+    
+    .articleNames, .articleAllTexts, .articleAllLinks{
+        padding: 0 10% 2% 8%;
+    }
+    .articleNames{
+        margin-bottom: 2%;
+    }
+    
+    /*Footer positioning*/
+    .footer{
+        background: #FAFAFA;
+        display: grid;
+        width: 100vw;
+        height: 100%;
+        grid-template-areas: "contacts"
+        "privacy";
+        grid-template-columns: 100%;
+        grid-template-rows: 55% 44%;
+        justify-items: center;
+        align-items: center;
+    }
+    .contacts{
+        grid-area: contacts;
+    }
+    .socialNetworks{
+        display: grid;
+        width: 65vw;
+        grid-template-areas: "socialNetworks";
+        grid-template-rows: 100%;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .socialNetworks{
+        grid-area: socialNetworks;
+    }
+    .privacy{
+        grid-area: privacy;
+    }
+
+    /*Fonts and styles*/
+    
+    *{
+        font-family: "Gilroy";
+    }
+    /*Header*/
+    .menuList{
+        font-size: 0.7em;
+        font-weight: 400;
+    }
+    .menuList li a{
+        color: #000000;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    li{
+        list-style-type: none;
+    }
+    
+    /*Main General*/
+    .generalPhoto1{
+    background: url(/assets/images/generalphoto1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 100%;}
+    
+    .generalPhoto2{
+        background: url(/assets/images/generalphoto2.png);
+        height:100%;
+        max-width: 100%;
+        background-repeat: no-repeat;
+    background-size: cover;
+    }
+    
+    #hGeneralContent1{
+        font-size: 1.6em;
+        font-weight: 600;
+    }
+    #pGeneralContent1{
+        font-size: 1em;
+        line-height: 1.75rem;
+        margin-bottom: 10%;
+    }
+    .findGiftNow, .learnMore{
+        font-size: 1.5vh;
+    }
+    #pGeneralContent2{
+        font-size: 1em;
+        line-height: 1.4rem;
+        text-align: justify;
+        margin-bottom: 8%;
+    }
+    #hGeneralContent2{
+        font-size: 1.5em;
+    }
+    #pGeneralContent1, .findGiftNow, #pGeneralContent2, #hGeneralContent2, .learnMore{
+        font-weight: 400;
+    }
+    .findGiftNow{
+        background: #F7941E;
+        color: #FFFFFF;
+    }
+    .learnMore{
+        background: #F1F1F2;
+        color: #F7941E;
+    }
+    .findGiftNow, .learnMore{
+        width:30vw;
+        height: 4vh; 
+        border: 1px solid #F7941E;
+        border-radius: 0.3em;
+    }
+    
+    /*Gift content sections*/
+    .giftContent{
+        font-weight: 400;
+    }
+    .hGiftContent{
+        font-size: 1.6em;
+    }
+    .pGiftContent{
+        font-size: 1em;
+        margin-top: -3%;
+    }
+    #pGiftSection1, #pGiftSection2, #pGiftSection3, #pGiftSection4{
+        font-size: 1.2em;
+    }
+    #linkSeeMore1, #linkSeeMore2, #linkSeeMore3, #linkSeeMore4{
+        font-size: 0.88em;
+        color: #000000;
+    }
+    
+    /*Blog style*/
+    
+    .blogSection1, .blogSection2text, #articleText1, #articleText2, #linkReadMore2, #linkReadMore3{
+        font-weight: 400;
+    }
+    #articleName1, #articleName2{
+        font-weight: 700;
+    }
+    .articleAllLinks{
+        color: #000000;
+    }
+    .linkReadMore1{
+        color: #FFFFFF;
+    }
+    .blogp, .linkReadMore1, .articleAllTexts{
+        font-size: 0.8em;
+    }
+    .blogh{
+        font-size: 1.8em;
+        font-weight: 400;
+    }
+    .name, .articleAllLinks{
+        font-size: 0.8em;
+    }
+    .blogStatement{
+        font-size: 1.5em;
+    }
+    .articleNames{
+        font-size: 1em;
+    }
+    .blogSection2text{
+        color: #FFFFFF;
+    }
+    
+    .article1, .article2{
+        background: #FFFFFF;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+    }
+    .articleAllTexts{
+        line-height: 1.5em;
+    }
+    #linkReadMore2, #linkReadMore3 {
+        font-size: 0.7em;
+    }
+    
+    /*Footer style*/
+    .privacy{
+        font-size: 0.6em;
+        font-weight: 400;
+    }
+    .linkFacebook, .linkTwitter, .linkInstagram, .linkYoutube, .linkPinterest{
+        color: #000000;
+    }
+
+    @media screen {
+    .signUp{
+        display: none;
+    }
+    }
+    .footerNavigation{
+        display: none;
+    }
+    }
