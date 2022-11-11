@@ -1,0 +1,35 @@
+.header__navbar{
+    padding: 2% 4% 2% 4%;
+}
+
+.button{
+    background: #5222D0;
+border-radius: 100px;
+}
+
+.page{
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+.container-image img{
+    max-width: 100%;
+}
+
+.button-buy{
+    width: 53%;
+    height: 17%;
+    text-align: center;
+    font-size: 2rem;
+}
+.button-image{
+    width: 25%;
+}
+.nav-link{
+    color: #5222D0;
+}
+
+.container-text{
+    line-height: 1.7rem;
+}
+

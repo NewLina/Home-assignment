@@ -1,0 +1,51 @@
+.header__navbar{
+    padding: 2% 4% 2% 4%;
+}
+
+.button{
+    background: #5222D0;
+border-radius: 100px;
+}
+
+.page{
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link-subpage{
+    color: #000000;
+}
+
+.main__content{
+    margin-bottom: 5%;
+    padding: 3% 8% 0 8%;
+}
+
+.main__header{
+    padding-left: 8%;
+}
+
+.subpage-footer{
+    padding-left: 9%;
+}
+
+.card.card-news{
+    background: #EC615B;
+}
+
+.card-without-cables{
+    width: 105%;
+    height: 105%;
+}
+.card-img-without-cables{
+    padding: 4% 4% 4% 4%;
+}
+
+.card-games{
+    width: 101%;
+}
+
+.card-button{
+    width: 65%;
+}
