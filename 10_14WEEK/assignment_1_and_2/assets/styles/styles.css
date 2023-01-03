@@ -1,0 +1,36 @@
+.wrapper{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+.heading{
+    text-align: center;
+    font-size: 3vw;
+    color: #3b665c;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 40% 1fr;
+    grid-template-rows: 60vh;
+}
+
+.gallery img{
+    width: 100%;
+    object-fit: cover;
+    grid-row: auto;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.buttons{
+    margin: 0 20% 0 20%;
+    display: flex;
+    justify-content: space-around;
+}
+#back, #next{
+    width: 15%;
+padding: 1% 0 1% 0;
+font-size: 1.5vw;
+background-color: #3b665c;
+color: aliceblue;
+}
